@@ -89,15 +89,15 @@
     --twonet-secondary-light: #2E2E2E;
     --twonet-bg-light: #2c2c2c;
     --twonet-bg-dark: #0f0f0f;
-    --twonet-text-dark: #343434;
+    --twonet-text-dark: #ffffff;
     --twonet-text: #676767;
     --twonet-gray: #999999;
     --twonet-link-light: #CCCCCC;
     --twonet-light: #bbbbbb;
-    --twonet-neutral: #f9f9fc;
+    --twonet-neutral: #333333;
     --twonet-yellow: #de5915;
     --twonet-yellow-light: #fa8c0a;
-    --twonet-text-light: #fff;
+    --twonet-text-light: #ffffff;
     --twonet-border-light: #e7e7e7;
     --twonet-border-dark: #d9d9d9;
 }
@@ -1330,6 +1330,7 @@ header.sticky .header-menu .navbar-nav>li {
 
 .section-main-title h2 {
     margin-bottom: 0;
+    color: white;
 }
 
 .banner-one .section-main-title {
@@ -1514,6 +1515,7 @@ header.sticky .header-menu .navbar-nav>li {
     transition: all 0.3s;
     margin-bottom: 35px;
     font-weight: 400;
+    color: black;
 }
 
 .services-one .services-one-box a {
@@ -1566,7 +1568,7 @@ header.sticky .header-menu .navbar-nav>li {
 
 .services-one .services-one-bottom p {
     margin-top: 50px;
-    color: var(--twonet-dark);
+    color: white;
 }
 
 .services-one .services-one-bottom p a {
@@ -1588,6 +1590,7 @@ header.sticky .header-menu .navbar-nav>li {
     padding-top: 113px;
     padding-bottom: 130px;
     overflow: hidden;
+    background-color: #333333;
 }
 
 .about-one .about-one-info {
@@ -1865,7 +1868,7 @@ header.sticky .header-menu .navbar-nav>li {
 .package-one {
     padding-top: 130px;
     padding-bottom: 115px;
-    background-color: #F9F9FC;
+    background-color: #333333;
     position: relative;
     overflow: hidden;
 }
@@ -2426,6 +2429,7 @@ header.sticky .header-menu .navbar-nav>li {
 .joinus-one {
     padding-bottom: 130px;
     padding-top: 149px;
+    background-color:  #333333;
 }
 
 .joinus-one-left {
@@ -2483,7 +2487,7 @@ header.sticky .header-menu .navbar-nav>li {
 
 .joinus-one-right-details .text p {
     font-size: 18px;
-    color: var(--twonet-dark);
+    color: white;
     font-weight: 500;
 }
 
@@ -3377,6 +3381,7 @@ header.sticky .header-menu .navbar-nav>li {
 .brand-one {
     position: relative;
     z-index: 199;
+    background-color: #333333;
 }
 
 .brand-one .section-title {
