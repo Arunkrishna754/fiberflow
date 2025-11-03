@@ -396,7 +396,7 @@ FAQ / ACCORDION SECTION
 
     const plansData = {
         ott: [{
-                name: "MEG Basic",
+                name: "Fiberflow Basic",
                 speed: "50 Mbps",
                 desc: "Recommended for Basic Browsing",
                 price: "₹499 / month",
@@ -419,7 +419,7 @@ FAQ / ACCORDION SECTION
                 subscriptions: ["assets/images/Z5.svg", "assets/images/aha_tamil.svg", "assets/images/sun.svg", "assets/images/FC.svg", "assets/images/450-live.png"]
             },
             {
-                name: "MEG Pro",
+                name: "Fiberflow Pro",
                 speed: "100 Mbps",
                 desc: "Recommended for Small Home",
                 price: "₹699 / month",
@@ -442,7 +442,7 @@ FAQ / ACCORDION SECTION
                 subscriptions: ["assets/images/jiohotstar.webp", "assets/images/Z5.svg", "assets/images/sun.svg", "assets/images/aha_tamil.svg", "assets/images/450-live.png"]
             },
             {
-                name: "MEG Ultra",
+                name: "Fiberflow Ultra",
                 speed: "100 Mbps",
                 desc: "Recommended for Small Home",
                 price: "₹999 / month",
@@ -465,7 +465,7 @@ FAQ / ACCORDION SECTION
                 subscriptions: ["assets/images/Amazon-Prime.png", "assets/images/sonyliv.png", "assets/images/sun.svg", "assets/images/jiohotstar.webp", "assets/images/450-live.png", "assets/images/FC.svg", "assets/images/Z5.svg", ]
             },
             {
-                name: "MEG PROMAX",
+                name: "Fiberflow PROMAX",
                 speed: "200 Mbps",
                 desc: "Recommended for Streaming",
                 price: "₹999 / month",
@@ -488,7 +488,7 @@ FAQ / ACCORDION SECTION
                 subscriptions: ["assets/images/Amazon-Prime.png", "assets/images/sonyliv.png", "assets/images/sun.svg", "assets/images/jiohotstar.webp", "assets/images/450-live.png", "assets/images/FC.svg", "assets/images/Z5.svg", "assets/images/aha_tamil.svg", "assets/images/lionsgate.jpg"]
             },
             {
-                name: "MEG Ultra",
+                name: "Fiberflow Ultra",
                 speed: "300 Mbps",
                 desc: "Recommended for Pro Users",
                 price: "₹1199 / month",
@@ -512,7 +512,7 @@ FAQ / ACCORDION SECTION
             },
         ],
         wifi: [{
-                name: "MEG 50",
+                name: "Fiberflow 50",
                 speed: "50 Mbps",
                 desc: "Recommended for Basic Browsing",
                 price: "₹499 / month",
@@ -534,7 +534,7 @@ FAQ / ACCORDION SECTION
                 ],
             },
             {
-                name: "MEG 100",
+                name: "Fiberflow 100",
                 speed: "100 Mbps",
                 desc: "Recommended for Small Home",
                 price: "₹649 / month",
@@ -556,7 +556,7 @@ FAQ / ACCORDION SECTION
                 ],
             },
             {
-                name: "MEG 200",
+                name: "Fiberflow 200",
                 speed: "200 Mbps",
                 desc: "Recommended for Streaming",
                 price: "₹849 / month",
@@ -579,7 +579,7 @@ FAQ / ACCORDION SECTION
 
             },
             {
-                name: "MEG 300",
+                name: "Fiberflow 300",
                 speed: "300 Mbps",
                 desc: "Recommended for Pro User",
                 price: "₹1049 / month",
@@ -603,7 +603,7 @@ FAQ / ACCORDION SECTION
             }
         ],
         iptv: [{
-                name: "MEG TV Basic",
+                name: "Fiberflow TV Basic",
                 speed: "50 mbps",
                 desc: "Recommended for Basic Browsing",
                 price: "₹599 / month",
@@ -631,7 +631,7 @@ FAQ / ACCORDION SECTION
                 ],
             },
             {
-                name: "MEG IPTV Pro",
+                name: "Fiberflow IPTV Pro",
                 speed: "100 Mbps",
                 desc: "Recommended for Small Home",
                 price: "₹799 / month",
@@ -658,7 +658,7 @@ FAQ / ACCORDION SECTION
                 ],
             },
             {
-                name: "MEG TV Promax",
+                name: "Fiberflow TV Promax",
                 speed: "200 Mbps",
                 desc: "Recommended for Pro Users",
                 price: "₹999 / month",
@@ -685,7 +685,7 @@ FAQ / ACCORDION SECTION
                 ],
             },
             {
-                name: "MEG TV Ultra",
+                name: "Fiberflow TV Ultra",
                 speed: "300 Mbps",
                 desc: "Recommended for Pro Users",
                 price: "₹1199 / month",
@@ -862,7 +862,7 @@ FAQ / ACCORDION SECTION
         ],
 
         airfiber: [{
-                name: "MEG AFB30",
+                name: "Fiberflow AFB30",
                 speed: "30 mbps",
                 desc: "Recommended for Small Business Wireless Backup",
                 price: "₹549/ month",
@@ -885,7 +885,7 @@ FAQ / ACCORDION SECTION
             },
 
             {
-                name: "MEG AFB40",
+                name: "Fiberflow AFB40",
                 speed: "40 mbps",
                 desc: "Recommended for Growing Business Wireless Backup",
                 price: "₹649/ month",
@@ -908,7 +908,7 @@ FAQ / ACCORDION SECTION
             },
 
             {
-                name: "MEG AFB50",
+                name: "Fiberflow AFB50",
                 speed: "50 mbps",
                 desc: "Recommended for Medium Business Wireless Backup",
                 price: "₹749/ month",
