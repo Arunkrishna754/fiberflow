@@ -41,13 +41,7 @@
   justify-content: space-between;
   z-index: 1000;
 }
-
-/* LOGO */
-.navbar .brand-logo img {
-  height: 45px;
-  display: block;
-  transition: transform 0.3s ease;
-}
+.navbar .brand-logo img { height: 45px; display: block; transition: transform 0.3s ease; }
 .navbar .brand-logo img:hover { transform: scale(1.05); }
 
 /* NAV LINKS */
@@ -59,7 +53,6 @@
   margin: 0;
   padding: 0;
 }
-
 .navbar .nav-link {
   color: #333;
   font-weight: 500;
@@ -76,7 +69,7 @@
   transform: scale(1.05);
 }
 
-/* DROPDOWN */
+/* DROPDOWN (DESKTOP) */
 .navbar .nav-item.dropdown { position: relative; }
 .navbar .dropdown-menu {
   position: absolute;
@@ -97,10 +90,7 @@
   text-decoration: none;
   display: block;
 }
-.navbar .dropdown-item:hover {
-  background: #f9f9f9;
-  color: #ff0055;
-}
+.navbar .dropdown-item:hover { background: #f9f9f9; color: #ff0055; }
 
 /* AUTH BUTTONS */
 .navbar .auth-buttons {
@@ -116,22 +106,10 @@
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.navbar .auth-buttons .btn-outline-dark {
-  border: 1px solid #333;
-  color: #333;
-}
-.navbar .auth-buttons .btn-outline-dark:hover {
-  background: #333;
-  color: #fff;
-}
-.navbar .auth-buttons .btn-bg-primary {
-  background: #ff0055;
-  color: #fff;
-  border: 1px solid #ff0055;
-}
-.navbar .auth-buttons .btn-bg-primary:hover {
-  background: #e6004f;
-}
+.navbar .auth-buttons .btn-outline-dark { border: 1px solid #333; color: #333; }
+.navbar .auth-buttons .btn-outline-dark:hover { background: #333; color: #fff; }
+.navbar .auth-buttons .btn-bg-primary { background: #ff0055; color: #fff; border: 1px solid #ff0055; }
+.navbar .auth-buttons .btn-bg-primary:hover { background: #e6004f; }
 
 /* ------------------- MOBILE ------------------- */
 .menu-toggle {
@@ -157,6 +135,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow-y: auto;
 }
 .mobile-menu.active { right: 0; }
 
@@ -168,15 +147,8 @@
   align-self: flex-end;
   cursor: pointer;
 }
-
-.mobile-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.mobile-menu ul li {
-  margin-bottom: 10px;
-}
+.mobile-menu ul { list-style: none; padding: 0; margin: 0; }
+.mobile-menu ul li { margin-bottom: 10px; }
 .mobile-menu ul a {
   color: #333;
   text-decoration: none;
@@ -186,16 +158,31 @@
 }
 .mobile-menu ul a:hover { color: #ff0055; }
 
+/* MOBILE DROPDOWN FIX */
+.mobile-dropdown .submenu {
+  display: none;
+  flex-direction: column;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+.mobile-dropdown.open .submenu { display: flex; }
+.mobile-dropdown .dropdown-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-dropdown .dropdown-toggle i {
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+.mobile-dropdown.open .dropdown-toggle i {
+  transform: rotate(180deg);
+}
+
 @media (max-width: 991px) {
-  .navbar {
-    padding: 0 20px;
-  }
-  .navbar .nav, .navbar .auth-buttons {
-    display: none; /* hide main menu */
-  }
-  .menu-toggle {
-    display: block;
-  }
+  .navbar { padding: 0 20px; }
+  .navbar .nav, .navbar .auth-buttons { display: none; }
+  .menu-toggle { display: block; }
 }
   </style>
 </head>
@@ -259,11 +246,43 @@
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
     <button class="close-btn"><i class="fas fa-times"></i></button>
-
     <ul>
       <li><a href="index.php">Home</a></li>
-      <li><a href="#">Fiberflow Services</a></li>
-      <li><a href="#">Broadband Plans</a></li>
+
+      <li class="mobile-dropdown">
+        <a href="#" class="dropdown-toggle">Fiberflow Services <i class="fas fa-chevron-down"></i></a>
+        <ul class="submenu">
+          <li><a href="internet-lease-line.php">Internet leased line / ILL</a></li>
+          <li><a href="p2p.php">Intranet / P2P</a></li>
+          <li><a href="managed-network-services.php">Managed Network Services</a></li>
+          <li><a href="broadband.php">Business Broadband</a></li>
+          <li><a href="sd-wan.php">SD-WAN</a></li>
+          <li><a href="voice.php">Voice</a></li>
+          <li><a href="wifi-design.php">Wifi Design</a></li>
+          <li><a href="firewall.php">Firewall</a></li>
+          <li><a href="fiber-networking.php">Fiber Networking</a></li>
+        </ul>
+      </li>
+
+      <li class="mobile-dropdown">
+        <a href="#" class="dropdown-toggle">Broadband Plans <i class="fas fa-chevron-down"></i></a>
+        <ul class="submenu">
+          <li><a href="plans-pollachi.php">Broadband Plans in Pollachi</a></li>
+          <li><a href="plans-anamalai.php">Broadband Plans in Anaimalai</a></li>
+          <li><a href="plans-vettaikaranpudur.php">Broadband Plans in Vettaikaranpudur</a></li>
+          <li><a href="plans-kinathukadavu.php">Broadband Plans in Kinathukadavu</a></li>
+          <li><a href="plans-negamam.php">Broadband Plans in Negamam</a></li>
+          <li><a href="plans-thamaraikulam.php">Broadband Plans in Thamaraikulam</a></li>
+          <li><a href="plans-pethampatti.php">Broadband Plans in Pethampatti</a></li>
+          <li><a href="plans-nalligoundanpalayam.php">Broadband Plans in Nalligoundanpalayam</a></li>
+          <li><a href="plans-Ponnapuram.php">Broadband Plans in Ponnapuram</a></li>
+          <li><a href="plans-Kongalnagaram.php">Broadband Plans in Kongalnagaram</a></li>
+          <li><a href="plans-Achipatti.php">Broadband Plans in Achipatti</a></li>
+          <li><a href="plans-Panikkampatti.php">Broadband Plans in Panikkampatti</a></li>
+          <li><a href="plans-NMSungam.php">Broadband Plans in NM Sungam</a></li>
+        </ul>
+      </li>
+
       <li><a href="plans.php">Plans</a></li>
       <li><a href="about.php">About us</a></li>
       <li><a href="contact.php">Contact</a></li>
@@ -284,9 +303,17 @@
     menuToggle.addEventListener('click', () => {
       mobileMenu.classList.add('active');
     });
-
     closeBtn.addEventListener('click', () => {
       mobileMenu.classList.remove('active');
+    });
+
+    // Dropdown toggle for mobile
+    document.querySelectorAll('.mobile-dropdown .dropdown-toggle').forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = toggle.parentElement;
+        parent.classList.toggle('open');
+      });
     });
   </script>
 </body>
